@@ -16,3 +16,6 @@
 100-print_tebahpla.py: prints the alphabet, in reverse order, alternating lowercase and uppercase
 101-remove_char_at.py: function that creates a copy of the string, removing the character at the position n
 102-magic_calculation.py: function def magic_calculation(a, b, c): that does exactly the same as the following Python bytecode 
+100-print_tebahpla.py: program that prints the ASCII alphabet, in reverse order, alternating lowercase and uppercase (z in lowercase and Y in uppercase) , not followed by a new line.
+101-remove_char_at.py: A function that creates a copy of the string, removing the character at the position n (not the Python way, the “C array index”).
+102-magic_calculation.py: A Python function def magic_calculation(a, b, c): that does exactly the same as the following Python bytecode:
