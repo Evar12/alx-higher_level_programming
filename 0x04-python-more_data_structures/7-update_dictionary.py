@@ -1,15 +1,7 @@
 #!/usr/bin/python3
-
-
-def update_dictionary(a_dictionary, key, value):
-    """
-    add or replace a new key value in dict
-    """
-
-    if a_dictionary is not None:
-        new_dict = a_dictionary
-        new_dict[key] = value
-        return new_dict
+def update_dictionary(my_dict, key, value):
+    my_dict[key] = value
+    return my_dict
 
 if __name__ == '__main__':
     print_s = __import__('6-print_sorted_dictionary').print_sorted_dictionary
