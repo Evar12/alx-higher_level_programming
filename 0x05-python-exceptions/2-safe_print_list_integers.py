@@ -7,11 +7,10 @@ def safe_print_list_integers(my_list=[], x=0):
     for i in range(x):
         try:
             print('{:d}'.format(my_list[i]), end='')
+        except (ValueError, TypeError):
+            pass
+        else:
             count += 1
-        except ValueError:
-            pass
-        except TypeError:
-            pass
 
     print()
     return count
@@ -22,7 +21,7 @@ if __name__ == '__main__':
     nb_print = safe_print_list_integers(my_list, 2)
     print("nb_print: {:d}".format(nb_print))
 
-    my_list = [1, 2, 3, "Holberton", 4, 5, [1, 2, 3]]
+    my_list = [1, 2, 3, "School", 4, 5, [1, 2, 3]]
     nb_print = safe_print_list_integers(my_list, len(my_list))
     print("nb_print: {:d}".format(nb_print))
 
